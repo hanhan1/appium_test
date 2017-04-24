@@ -1,0 +1,62 @@
+{
+  "uid" : "1dd27810a4bb8ae",
+  "name" : "TestLogin.test_login",
+  "title" : "Test login",
+  "time" : {
+    "start" : 1492747027899,
+    "stop" : 1492747158178,
+    "duration" : 130279
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 1
+  },
+  "failure" : {
+    "message" : "AssertionError: assert False\n +  where False = <bound method ElementActions.is_toast_show of <base.action.ElementActions object at 0x0000024848424710>>('登陆成功', 100)\n +    where <bound method ElementActions.is_toast_show of <base.action.ElementActions object at 0x0000024848424710>> = <base.action.ElementActions object at 0x0000024848424710>.is_toast_show",
+    "stackTrace" : "self = <test.test_home.TestLogin object at 0x00000248484182E8>\naction = <base.action.ElementActions object at 0x0000024848424710>\n\n    def test_login(self, action: ElementActions):\n        L.d('test_login')\n        account = Steps.get_account()\n        action.sleep(3)\n        # action.test_SwipeGuideImages()\n        action.click(HomePage.登录入口)\n        action.text(LoginPage.账户, account[0])\n        action.text(LoginPage.密码, account[1])\n        action.sleep(1)\n        action.click(LoginPage.登录)\n        action.sleep(3)\n>       assert action._find_text_in_page(\"\")\nE       AssertionError: assert False\nE        +  where False = <bound method ElementActions.is_toast_show of <base.action.ElementActions object at 0x0000024848424710>>('登陆成功', 100)\nE        +    where <bound method ElementActions.is_toast_show of <base.action.ElementActions object at 0x0000024848424710>> = <base.action.ElementActions object at 0x0000024848424710>.is_toast_show\n\ntest\\test_home.py:21: AssertionError"
+  },
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "FAILED",
+  "suite" : {
+    "uid" : "54ce5e71421409c8",
+    "name" : "test.test_home",
+    "title" : "Test home"
+  },
+  "steps" : [ {
+    "name" : "获取账号和密码",
+    "title" : "获取账号和密码",
+    "time" : {
+      "start" : 1492747032523,
+      "stop" : 1492747032525,
+      "duration" : 2
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "DESKTOP-33SMPDQ"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "suite-name",
+    "value" : "test.test_home"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "8136-MainThread"
+  } ],
+  "parameters" : [ ]
+}

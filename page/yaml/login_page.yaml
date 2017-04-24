@@ -1,0 +1,16 @@
+---
+LoginPage:
+  dec: 登录页面
+  locators:
+    -
+      name: 账户
+      type: id
+      value: com.grandale.uo:id/edt_login_mobile_no
+    -
+      name: 密码
+      type: id
+      value: com.grandale.uo:id/edt_login_password
+    -
+      name: 登录
+      type: id
+      value: com.grandale.uo:id/btn_register

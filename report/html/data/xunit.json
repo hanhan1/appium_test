@@ -1,0 +1,38 @@
+{
+  "time" : {
+    "start" : 1492747488900,
+    "stop" : 1492747519583,
+    "duration" : 30683
+  },
+  "testSuites" : [ {
+    "uid" : "fe03d07c46e45bf0",
+    "name" : "test.test_home",
+    "title" : "Test home",
+    "time" : {
+      "start" : 1492747488900,
+      "stop" : 1492747519583,
+      "duration" : 30683
+    },
+    "statistic" : {
+      "total" : 1,
+      "passed" : 1,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 0,
+      "broken" : 0
+    },
+    "description" : null,
+    "testCases" : [ {
+      "uid" : "5097fbde62b9d005",
+      "name" : "TestLogin.test_login",
+      "title" : "Test login",
+      "time" : {
+        "start" : 1492747488900,
+        "stop" : 1492747519583,
+        "duration" : 30683
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    } ]
+  } ]
+}

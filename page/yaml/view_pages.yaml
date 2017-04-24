@@ -1,0 +1,8 @@
+---
+View_pages:
+  dec: 广告页
+  locators:
+    -
+      name: 滑动广告页
+      type: id
+      value: com.grandale.uo:id/btn_my

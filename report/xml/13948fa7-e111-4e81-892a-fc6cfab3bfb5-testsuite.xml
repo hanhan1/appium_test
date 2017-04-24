@@ -1,0 +1,23 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1492747488900" stop="1492747519583">
+  <name>test.test_home</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1492747488900" status="passed" stop="1492747519583">
+      <name>TestLogin.test_login</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="10184-MainThread"/>
+        <label name="host" value="DESKTOP-33SMPDQ"/>
+      </labels>
+      <steps>
+        <step start="1492747493530" status="passed" stop="1492747493532">
+          <name>获取账号和密码</name>
+          <title>获取账号和密码</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>

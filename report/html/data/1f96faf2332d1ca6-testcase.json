@@ -1,0 +1,62 @@
+{
+  "uid" : "1f96faf2332d1ca6",
+  "name" : "TestLogin.test_login",
+  "title" : "Test login",
+  "time" : {
+    "start" : 1492743115410,
+    "stop" : 1492743123525,
+    "duration" : 8115
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 1
+  },
+  "failure" : {
+    "message" : "TypeError: argument of type 'bool' is not iterable",
+    "stackTrace" : "self = <test.test_home.TestLogin object at 0x0000019F8D446400>\naction = <base.action.ElementActions object at 0x0000019F8D51B908>\n\n    def test_login(self, action: ElementActions):\n        L.d('test_login')\n        account = Steps.get_account()\n        action.sleep(3)\n        # action.test_SwipeGuideImages()\n        # action.click(HomePage.登录入口)\n        # action.click(HomePage.我的)\n        # action._find_text_in_page(\"我的\")\n>       action.click(action._find_text_in_page(\"我的\"))\n\ntest\\test_home.py:18: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbase\\action.py:87: in click\n    el = self._find_element(locator)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <base.action.ElementActions object at 0x0000019F8D51B908>, locator = True\nis_need_displayed = True\n\n    def _find_element(self, locator, is_need_displayed=True):\n        \"\"\"查找单个元素,如果有多个返回第一个\n    \n            Args:\n                locator: 定位器\n                is_need_displayed: 是否需要定位的元素必须展示\n    \n            Returns: 元素\n    \n            Raises: NotFoundElementError\n                    未找到元素会抛 NotFoundElementError 异常\n    \n            \"\"\"\n>       if 'timeOutInSeconds' in locator:\nE       TypeError: argument of type 'bool' is not iterable\n\nbase\\action.py:255: TypeError"
+  },
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "FAILED",
+  "suite" : {
+    "uid" : "21531e60065ab34b",
+    "name" : "test.test_home",
+    "title" : "Test home"
+  },
+  "steps" : [ {
+    "name" : "获取账号和密码",
+    "title" : "获取账号和密码",
+    "time" : {
+      "start" : 1492743120237,
+      "stop" : 1492743120238,
+      "duration" : 1
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "DESKTOP-33SMPDQ"
+  }, {
+    "name" : "thread",
+    "value" : "4080-MainThread"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "suite-name",
+    "value" : "test.test_home"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  } ],
+  "parameters" : [ ]
+}

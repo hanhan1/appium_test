@@ -1,0 +1,62 @@
+{
+  "uid" : "a9b7f4b2bcb2438d",
+  "name" : "TestLogin.test_login",
+  "title" : "Test login",
+  "time" : {
+    "start" : 1492746445501,
+    "stop" : 1492746493394,
+    "duration" : 47893
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 1
+  },
+  "failure" : {
+    "message" : "AssertionError: assert False\n +  where False = <bound method ElementActions.is_toast_show of <base.action.ElementActions object at 0x000001CF3EDADB00>>('登陆成功')\n +    where <bound method ElementActions.is_toast_show of <base.action.ElementActions object at 0x000001CF3EDADB00>> = <base.action.ElementActions object at 0x000001CF3EDADB00>.is_toast_show",
+    "stackTrace" : "self = <test.test_home.TestLogin object at 0x000001CF3ECD83C8>\naction = <base.action.ElementActions object at 0x000001CF3EDADB00>\n\n    def test_login(self, action: ElementActions):\n        L.d('test_login')\n        account = Steps.get_account()\n        action.sleep(3)\n        # action.test_SwipeGuideImages()\n        action.click(HomePage.登录入口)\n        action.text(LoginPage.账户, account[0])\n        action.text(LoginPage.密码, account[1])\n        action.sleep(1)\n        action.click(LoginPage.登录)\n>       assert action.is_toast_show('登陆成功')\nE       AssertionError: assert False\nE        +  where False = <bound method ElementActions.is_toast_show of <base.action.ElementActions object at 0x000001CF3EDADB00>>('登陆成功')\nE        +    where <bound method ElementActions.is_toast_show of <base.action.ElementActions object at 0x000001CF3EDADB00>> = <base.action.ElementActions object at 0x000001CF3EDADB00>.is_toast_show\n\ntest\\test_home.py:20: AssertionError"
+  },
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "FAILED",
+  "suite" : {
+    "uid" : "6daffd3911f6425d",
+    "name" : "test.test_home",
+    "title" : "Test home"
+  },
+  "steps" : [ {
+    "name" : "获取账号和密码",
+    "title" : "获取账号和密码",
+    "time" : {
+      "start" : 1492746450335,
+      "stop" : 1492746450337,
+      "duration" : 2
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "DESKTOP-33SMPDQ"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "thread",
+    "value" : "436-MainThread"
+  }, {
+    "name" : "suite-name",
+    "value" : "test.test_home"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  } ],
+  "parameters" : [ ]
+}

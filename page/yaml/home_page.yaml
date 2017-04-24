@@ -1,0 +1,20 @@
+---
+HomePage:
+  dec: 主界面
+  locators:
+    -
+      name: 登录入口
+      type: id
+      value: com.grandale.uo:id/btn_my
+    -
+      name: 取消升级
+      type: id
+      value: com.grandale.uo:id/btn_ok
+    -
+      name: 确认升级
+      type: id
+      value: com.grandale.uo:id/btn_cancel
+    -
+      name: 我的
+      type: class
+      value: android.widget.Button

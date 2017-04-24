@@ -1,0 +1,62 @@
+{
+  "uid" : "4a69dddc288ac54e",
+  "name" : "TestLogin.test_login",
+  "title" : "Test login",
+  "time" : {
+    "start" : 1492744801065,
+    "stop" : 1492744809035,
+    "duration" : 7970
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 1
+  },
+  "failure" : {
+    "message" : "AttributeError: 'str' object has no attribute 'click'",
+    "stackTrace" : "self = <test.test_home.TestLogin object at 0x0000021C581F3470>\naction = <base.action.ElementActions object at 0x0000021C58ACE978>\n\n    def test_login(self, action: ElementActions):\n        L.d('test_login')\n        account = Steps.get_account()\n        action.sleep(3)\n        # action.test_SwipeGuideImages()\n        # action.click(HomePage.登录入口)\n        # action.click(HomePage.我的)\n        # action._find_text_in_page(\"我的\")\n>       action.clickByTextName(\"我的\")\n\ntest\\test_home.py:18: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <base.action.ElementActions object at 0x0000021C58ACE978>, test = '我的'\nclick_first = True\n\n    def clickByTextName(self,test, click_first=True):\n        \"\"\"基础的点击事件\n    \n            Args:\n                locator:定位器\n                count: 点击次数\n            \"\"\"\n        if click_first:\n>           self._text_in_page(test).click()\nE           AttributeError: 'str' object has no attribute 'click'\n\nbase\\action.py:107: AttributeError"
+  },
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "FAILED",
+  "suite" : {
+    "uid" : "754f5ccc105b27ca",
+    "name" : "test.test_home",
+    "title" : "Test home"
+  },
+  "steps" : [ {
+    "name" : "获取账号和密码",
+    "title" : "获取账号和密码",
+    "time" : {
+      "start" : 1492744805808,
+      "stop" : 1492744805810,
+      "duration" : 2
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "16616-MainThread"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-33SMPDQ"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "suite-name",
+    "value" : "test.test_home"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  } ],
+  "parameters" : [ ]
+}

@@ -1,0 +1,13 @@
+!EnvironmentInfo
+apk: D:\pycharm\appium-test/apk/JinDi_0405_ali.apk
+app_activity: com.grandale.uo.LaunchActivity
+app_package: com.grandale.uo
+appium: 1.4.16
+devices:
+- !DeviceInfo
+  device_name: 192.168.169.102:5555
+  platform_name: Android
+  platform_version: '6.0'
+html_report: D:\pycharm\appium-test/report/html
+pages_yaml: D:\pycharm\appium-test/page/yaml
+xml_report: D:\pycharm\appium-test/report/xml
